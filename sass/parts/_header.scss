@@ -203,6 +203,14 @@
     .hover-products {
         width: 1140px;
     }
+
+    .hover-logo {
+        max-width: 32rem;
+
+        &__link {
+            max-width: 14rem;
+        }
+    }
  }
 
 // Medium devices (tablets, less than 992px)
@@ -259,6 +267,10 @@
 }
 
 @media (max-width: 575.98px) { 
+
+    .header-info {
+        justify-content: flex-start;
+    }
 
 }
 

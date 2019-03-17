@@ -816,7 +816,11 @@ h4 {
 
 @media (max-width: 1199.98px) {
   .hover-products {
-    width: 1140px; } }
+    width: 1140px; }
+  .hover-logo {
+    max-width: 32rem; }
+    .hover-logo__link {
+      max-width: 14rem; } }
 
 @media (max-width: 991.98px) {
   .header-info {
@@ -852,6 +856,10 @@ h4 {
     display: none; }
   .hover-products {
     width: 520px; } }
+
+@media (max-width: 575.98px) {
+  .header-info {
+    justify-content: flex-start; } }
 
 @media (min-width: 1200px) {
   .hover-products {
