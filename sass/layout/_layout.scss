@@ -110,10 +110,28 @@
     }
 }
 
-@media (max-width: 767.98px) {
-    // .brick-picture  {
-    //     height: 75% !important;
-    // }
-}
+@media (max-width: 420px) { 
 
-@media (max-width: 575.98px) {}
+    .grid-wrapper {
+        grid-auto-rows: 15rem;
+ 
+        .brick-picture {
+         max-width: 38%;
+     }
+    }
+ 
+    .br-gr-7 {
+        grid-column: 1 / 4;
+        grid-row: 5 / 6;
+        flex-direction: column-reverse;
+        justify-content: space-evenly !important;
+    }
+
+    .br-gr-8 {
+        grid-row: 6 / 7;
+    }
+
+    .br-gr-9 {
+        grid-row: 7 / 8;
+    }
+ }

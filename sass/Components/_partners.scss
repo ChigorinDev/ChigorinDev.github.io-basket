@@ -37,4 +37,19 @@
   
 }
 
-@media (max-width: 575.98px) {}
+@media (max-width: 420px) {
+    .partners-wrapper {
+        justify-content: space-between;
+        padding: 0 1rem;
+        flex-wrap: wrap;
+    }
+    .partners-item:not(:first-child) {
+        margin-left: 0rem;
+    }
+    .partners-item {
+        text-align: center;
+        &__img {
+            width: 75%;
+        }
+    }
+}
