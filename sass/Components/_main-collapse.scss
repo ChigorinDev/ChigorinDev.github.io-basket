@@ -1,0 +1,71 @@
+.collapse-wrapper {
+    margin-top: 8rem;
+
+    .collapse-head {
+        @include flex(unset, center);
+    
+        &__text {
+            margin: 0 0 0 1.5rem;
+            cursor: pointer;
+        }
+    }
+
+    .card {
+        border: none;
+    }
+
+    .card-header {
+        background: transparent;
+    }
+    
+    .card-body {
+        padding: 1rem 8%;
+    
+        &__content {
+            line-height: 1.5;
+        }
+    }
+
+}
+
+
+.icon-test, 
+.icon-card, 
+.icon-box, 
+.icon-hand {
+    background-image: url('../img/icons/icon-test.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-card {
+    background-image: url('../img/icons/icon-credit.png');
+
+}
+
+.icon-box {
+    background-image: url('../img/icons/icon-box.png');
+
+}
+
+.icon-hand {
+    background-image: url('../img/icons/icon-hand.png');
+}
+
+.write-to {
+    border: 1px;
+    display: flex;
+    margin-top: 2rem;
+
+    &__avatar {
+        width: 6.4rem;
+        height: 4.2rem;
+        margin-left: 1.5rem;
+        border-radius: 2px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+
+[class*="br-gr"] {
+    border-radius: 2px;
+    padding: 0 1.2rem;
+    @include flex(space-between, center);
+}
+
+ svg {
+    width:16px;
+    height:16px;
+}
+
+.icon-arrow {
+    background: url(../img/icons/icon-left-arrow.png) center no-repeat;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    -webkit-transition: margin-left .1s ;
+    transition: margin-left .1s ;
+        background-position-y: 0.9rem;
+}
+.brick-link {
+    font-size: 2rem;
+    color: $text-color;
+    display: block;
+    // width: 15rem;
+
+    &:hover .icon-arrow {
+        margin-left: .2rem;
+    }
+}
+
+.brick-picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+

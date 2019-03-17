@@ -1,0 +1,111 @@
+
+.product-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    min-height: 35rem;
+    border-radius: 2px;
+    border: 2px solid $light-grey-1;
+}
+
+.cart-product-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product-info-body {
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+}
+
+.product-list {
+    min-width: 20rem;
+    padding-left: .5rem;
+    list-style-type: none;
+
+    &__item {
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+
+        &:before {
+            content: "-";
+            margin-right: 5px;
+        }
+    }
+}
+
+.product-location {
+    max-width: 60%;
+
+    &__address {
+        display: flex;
+        flex-wrap: wrap;
+
+        span {
+            display: inline-block;
+            margin-right: .5rem;
+        }
+
+        p {
+            width: 100%;
+            margin-left: 3rem;
+        }
+        // align-items: flex-start;
+    }
+
+    &__delivery {
+        @extend .product-location__address;
+    }
+}
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { 
+//     .hover-products {
+//         width: 720px;
+//     }
+//  }
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+    .product-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-top: 7rem;
+    }
+
+    .cart-poruct-name {
+        position: absolute;
+        top: -44rem;
+        left: 2rem;
+    }
+
+    .cart-product-info {
+        flex-direction: column-reverse;
+    }
+    .product-info-body {
+        margin-top: 2rem;
+    }
+    .product-cart-price {
+        order: 1;
+        justify-content: space-evenly;
+        margin: 2rem 0;
+
+        &__prices {
+            display: flex;
+        }
+        .profit-price__gain {
+            width: auto;
+        }
+    }
+
+    .product-location {
+        max-width: 100%;
+    }
+    .product-buttons {
+        text-align: center;
+    }
+ }

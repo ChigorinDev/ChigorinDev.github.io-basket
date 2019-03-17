@@ -1,0 +1,54 @@
+.bonus-wrapper {
+  
+}
+
+.bonus {
+    text-align: center;
+
+    h1, h2 {
+        margin-bottom: auto;
+        color: $green-color;
+    }
+
+    h2 {
+        display: inline-block;
+    }
+
+    h1 {
+        color: #363636;
+    }
+
+    &--text-red {
+        color: $red-color;
+    }
+}
+
+.bonus-body {
+    @include flex(unset, center);
+    margin-top: 2rem;
+    padding: 0 5%;
+
+    &__text {
+        line-height: 1.5;
+        padding: 1rem 1rem 0;
+        text-align: left;
+        
+        p {
+            font-size: 1.7rem;
+        }
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) { 
+   .bonus-body {
+       flex-direction: column-reverse;
+       padding: none;
+   }
+ }

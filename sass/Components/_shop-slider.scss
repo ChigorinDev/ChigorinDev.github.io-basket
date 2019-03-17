@@ -1,0 +1,113 @@
+.slider-wrapper {
+  margin-top: 8rem;
+}
+
+.our-shop-slider {
+    
+    .slick-track {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;       
+    }
+
+    .slick-slide {
+      width: 100%;
+      min-height: 40rem;
+      @include flex(unset, center);
+   }
+   
+   .slick-slide img {
+      max-width: 100%;
+      height: auto;
+   }
+
+   .slick-dots {
+     border-top: 1px solid lighten($color: $light-grey-text, $amount: 45);
+   }
+   .slick-dots li button {
+    height: 4px;
+    width: 4rem;
+   }
+   .slick-dots li button:before {
+    height: .4rem;
+     width: 4rem;
+     color: transparent;
+     top: -6px;
+   }
+   .slick-dots li.slick-active button:before {
+    opacity: .75;
+    background-color: red;
+}
+  .slick-dots li {
+    margin: 0 4%;
+  }
+
+}
+.our-shop {
+    margin: 1rem;
+    max-width: 35rem;
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+  .our-shop.slick-slide.slick-center + .slick-slide {
+    transition: all .7s;
+    transform: scale(0.5) translate(-100px);
+    z-index: 10;
+  }
+  
+//   add .slick-active
+  .our-shop.slick-slide {
+    transition: all .7s;
+    transform: scale(0.5) translate(100px);
+  }
+  
+  .our-shop.slick-slide.slick-center {
+    transition: all .7s;
+    transform: scale(1.4);
+    z-index: 30;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 4rem;
+    height: 50px;
+    // line-height: 50px;
+    margin-top: -25px;
+    border: none;
+    // background: transparent;
+    color: $light-grey-text;
+    font-family: monospace;
+    font-size: 5rem;
+    z-index: 900;
+    outline: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $light-grey-text;
+        color: lighten($light-grey-text, 20);
+    }
+  }
+  
+  .our-shop-slider .slick-prev {
+    left: 7rem;
+    text-align: left;
+  }
+  
+  .our-shop-slider .slick-next {
+    right: 7rem;
+    text-align: right;
+  }
+
+  .our-shop-slider .slick-prev:before, 
+  .our-shop-slider .slick-next:before {
+    display: none;
+  }

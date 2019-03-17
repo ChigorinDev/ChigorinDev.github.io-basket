@@ -1,0 +1,110 @@
+//color classes 
+
+.bg-red {
+    background-color:#b6030f;
+}
+
+.bg-grey-1 {
+    background-color:#ebebeb;
+}
+.bg-grey-2 {
+    background-color:#f6f4f4;
+}
+.bg-green {
+    background-color: #a5d2cd;
+}
+.bg-blue {
+    background-color: #dfebf0;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 2px;
+    transform: scale(1);
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {  transform: scale(1.09);}
+    &:active { transform: scale(1);}
+}
+
+.red-buy-btn {
+    border: 1px solid $red-color;
+    text-align: center;
+    border-radius: 2px;
+    display: inline-block;
+    width: 22rem;
+    height: 4.2rem;
+    padding-top: 1.3rem;
+    background-color: $red-color;
+    color: #fff;
+    transition: all .2s;
+    cursor: pointer;
+    backface-visibility: hidden;
+    font-size: 1.5rem;
+
+    &:hover,
+    &:focus {transform: scale(1.01);
+        transform-origin: 0% 0;
+    }
+    &:active {transform: scale(1);
+        transform-origin: 0% 0;
+    }
+}
+
+.one-click-btn {
+    @extend .red-buy-btn;
+    background-color: #fff;
+    color: $text-color;
+    border: 1px solid $red-color;
+
+    &:hover,
+    &:focus {transform: scale(1);
+        transform-origin: 0% 0;
+    }
+    &:active {transform: scale(1);
+        transform-origin: 0% 0;
+    }
+    
+}
+
+.icon {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-size: contain;
+}
+
+.icon-key {
+    @extend .icon;
+    background: url(../img/icons/icon-wrench.png) center no-repeat;
+    background-size: 2rem;
+}
+.icon-location {
+    @extend .icon;
+    background: url(../img/icons/icon-location.png) center no-repeat;
+   
+}
+.icon-delivery {
+    @extend .icon;
+    background: url(../img/icons/icon-deliver.png) center no-repeat;
+   
+}
+
+.round-icon {
+    background-color: $green-color;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.box-shadow {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 1px 6px 6px rgba(0,0,0,0.1);
+}
+.row-reverse {
+    flex-direction: row-reverse;
+    padding: 0 !important;
+}

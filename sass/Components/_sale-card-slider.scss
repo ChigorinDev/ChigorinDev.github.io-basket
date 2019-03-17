@@ -1,0 +1,21 @@
+.sale-card-slider {
+    .slick-track {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+.sale-card {
+    // height: 20rem;
+    margin: 1rem;
+    max-width: 36.1rem;
+
+    &__coupon {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
