@@ -17,11 +17,18 @@
     background-color: #dfebf0;
 }
 
+button,
+button::after {
+  -webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
 .button {
     display: inline-block;
     border-radius: 2px;
     transform: scale(1);
-    transition: all .2s;
     cursor: pointer;
 
     &:hover,
@@ -53,6 +60,7 @@
     }
 }
 
+
 .one-click-btn {
     @extend .red-buy-btn;
     background-color: #fff;
@@ -74,6 +82,29 @@
     width: 2.4rem;
     height: 2.4rem;
     background-size: contain;
+}
+
+.icon-email {
+    @extend .icon;
+    background: url(../img/icons/icon-mail.png) center no-repeat;
+}
+.icon-phone {
+    @extend .icon;
+    background: url(../img/icons/icon-phone.png) center no-repeat;
+}
+.icon-profile {
+    @extend .icon;
+    background: url(../img/icons/icon-profile.png) center no-repeat;
+}
+.icon-comparison {
+    @extend .icon;
+    background: url(../img/icons/icon-comparison.png) center no-repeat;
+}
+.icon-basket {
+    @extend .icon;
+    width: 3.2rem;
+    height: 4rem;
+    background: url(../img/icons/icon-basket.png) center no-repeat;
 }
 
 .icon-key {
@@ -108,3 +139,4 @@
     flex-direction: row-reverse;
     padding: 0 !important;
 }
+

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- <base href="/"> -->
     <title>Куллеры</title>
+    <link rel="stylesheet" href="css/fancy/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/slick/slick.css">
     <link rel="stylesheet" href="css/slick/slick-theme.css">
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
@@ -16,46 +17,48 @@
 <body>
     <div class="container-fluid main-wrapper">
 
-        <!-- Header and navigation -->
+        <!-- Шапка сайта  -->
         <header class="header">
             <div class="header-info container">
                 <!-- Logo -->
                 <div class="header-logo">
-                    <a href="#" class="header-logo__link">
+                    <a href="index.html" class="header-logo__link">
                         <img class="header-logo__img" src="img/logo.svg" alt="logo">
                     </a>
                     <p class="header-logo__text">
                         Продажа Куллеров и Фильтров для воды в Нижнем Новгороде
                     </p>
                 </div>
-                <!-- Phone  -->
-                <div class="header-phone">
-                    <!-- <span class="header-phone__city">Нижний Новгород</span> -->
-                    <a href="#" class="icon-link">
-                        <img src="img/icons/icon-phone.png" class="header-phone__icon" alt="phone">
-                        <span class="header-phone__number">(831) 429-07-48</span>
-                    </a>
+                <div class="header-contacts-wrapper">
+                    <!-- Phone  -->
+                    <div class="header-phone">
+                        <span class="header-phone__city">Нижний Новгород</span>
+                        <a href="#" class="icon-link">
+                            <span class="icon-phone"></span>
+                            <div class="header-phone__number">(831) 429-07-48</div>
+                        </a>
+                    </div>
+                    <!-- Email -->
+                    <div class="header-mail">
+                        <a href="#" class="icon-link">
+                            <span class="icon-email"></span>
+                            <div class="header-mail__address">info@101cooler.ru</div>
+                        </a>
+                    </div>
                 </div>
-                <!-- Email -->
-                <div class="header-mail">
-                    <a href="#" class="icon-link">
-                        <img src="img/icons/icon-mail.png" class="header-mail__icon" alt="email">
-                        <span class="header-mail__address">info@101cooler.ru</span>
-                    </a>
-                </div>
-                <!-- Profile links -->
+                <!-- Ссылки профиля -->
                 <div class="header-links">
                     <a href="#" class="icon-link">
-                        <img src="img/icons/icon-comparison.png" class="header-links__compare" alt="comparison">
+                        <span class="icon-comparison"></span>
                     </a>
                     <a href="#" class="icon-link">
-                        <img src="img/icons/icon-profile.png" class="header-links__profile" alt="profile">
+                        <span class="icon-profile"></span>
                     </a>
                 </div>
-                <!-- Basket and product price -->
+                <!-- Корзина, количество продуктов в ней и общая стоимость-->
                 <div class="header-basket">
                     <a href="#" class="icon-link">
-                        <img src="img/icons/icon-basket.png" class="header-bascket__icon" alt="basket">
+                        <span class="icon-basket"></span>
                     </a>
 
                     <p class="header-basket__text">В корзине
@@ -66,10 +69,9 @@
                 </div>
             </div>
 
-            <!-- Navigation -->
+            <!-- Маеню навигации -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <!-- <img class="header-logo__img" src="/img/logo.svg" alt="logo"> -->
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,8 +82,8 @@
                         <ul class="nav navbar-nav">
 
                             <li class="nav-item dropdown">
-                                <a href="https://css-tricks.com/almanac/properties/f/filter/" class="dropdown-toggle nav-link"
-                                    data-toggle="dropdown">Куллеры<b class="caret"></b></a>
+                                <a href="https://css-tricks.com/almanac/properties/f/filter/"
+                                    class="nav-link">Куллеры</a>
 
                                 <ul class="dropdown-menu hover-products container">
                                     <div class="hover-product">
@@ -135,16 +137,57 @@
                                         <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
                                         <li class="hover-product__link"><a href="#">С холодильником</a></li>
                                         <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
-                                        <!-- <li class="hover-product__link"><a href="#">Без нагрева</a></li>
-                                        <li class="hover-product__link"><a href="#">серебристые</a></li> -->
+
                                     </div>
 
                                 </ul>
 
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link" href="#">Пурифайеры</a>
+                                <ul class="dropdown-menu hover-products container">
+                                    <div class="hover-product">
+                                        <div class="hover-product__head">
+                                            <img class="hover-product__img" src="img/products/b-silver.png" alt="kuler">
+                                            <a class="hover-product__category" href="#">Напольные</a>
+                                        </div>
+                                        <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                                        <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                                        <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                                        <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                                        <li class="hover-product__link"><a href="#">серебристые</a></li>
+                                    </div>
+                                    <div class="hover-product">
+                                        <div class="hover-product__head">
+                                            <img class="hover-product__img" src="img/products/Nastolnyj-kuler.png"
+                                                alt="kuler">
+                                            <a class="hover-product__category" href="#">Напольные</a>
+                                        </div>
+                                        <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                                        <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                                        <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                                        <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                                        <li class="hover-product__link"><a href="#">серебристые</a></li>
+                                    </div>
+                                    <div class="hover-product">
+                                        <div class="hover-product__head">
+                                            <img class="hover-product__img" src="img/products/bochka.png" alt="kuler">
+                                            <a class="hover-product__category" href="#">Напольные</a>
+                                        </div>
+                                        <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                                        <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                                        <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                                        <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                                        <li class="hover-product__link"><a href="#">серебристые</a></li>
+                                    </div>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Сервис Центр</a>
@@ -206,48 +249,47 @@
                 <div class="col-12 col-lg-8 cart-product-info">
                     <h3 class="cart-poruct-name">Ecotronic C21-TE grey кулер настольный</h3>
                     <div class="product-info-body">
-                        
-                            <ul class="product-list">
-                                <li class="product-list__item">с нагревом</li>
-                                <li class="product-list__item">с охлаждением до 7 С</li>
-                                <li class="product-list__item">холодильник 20 Л</li>
-                                <li class="product-list__item">высота 85 см</li>
-                            </ul>
 
-                            <div class="product-location">
-                                <div class="product-location__address">
-                                    <span class="icon-location"></span>
-                                    <h4>Самовывоз 09.01.19</h4>
-                                    <p>г. Нижний Новгород, ул.Дворовая д.30</p>
-                                </div> 
-                                <div class="product-location__delivery">
-                                    <span class="icon-delivery"></span>
-                                    <h4>Доставим бесплатно 09.01.19</h4>
-                                </div> 
+                        <ul class="product-list">
+                            <li class="product-list__item">с нагревом</li>
+                            <li class="product-list__item">с охлаждением до 7 С</li>
+                            <li class="product-list__item">холодильник 20 Л</li>
+                            <li class="product-list__item">высота 85 см</li>
+                        </ul>
+
+                        <div class="product-location">
+                            <div class="product-location__address">
+                                <span class="icon-location"></span>
+                                <h4>Самовывоз 09.01.19</h4>
+                                <p>г. Нижний Новгород, ул.Дворовая д.30</p>
+                            </div>
+                            <div class="product-location__delivery">
+                                <span class="icon-delivery"></span>
+                                <h4>Доставим бесплатно 09.01.19</h4>
                             </div>
                         </div>
-                            <div class="product-cart-price">
-                                <div class="product-cart-price__prices">
-                                <div class="product-cart-price--new">6 000 руб.</div>
-                                <div class="product-cart-price--old">7 000 руб</div>
-                                </div>
-                                <div class="profit-price__gain">выгода 1200</div>
-                            </div>
-                            <div class="product-buttons">
-                                <div class="one-click-btn">Купить в один клик</div>
-                                <div class="red-buy-btn">В корзину</div>
-                            </div>
-                       
+                    </div>
+                    <div class="product-cart-price">
+                        <div class="product-cart-price__prices">
+                            <div class="product-cart-price--new">6 000 руб.</div>
+                            <div class="product-cart-price--old">7 000 руб</div>
+                        </div>
+                        <div class="profit-price__gain">выгода 1200</div>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="one-click-btn">Купить в один клик</div>
+                        <div class="red-buy-btn">В корзину</div>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-             <!-- Выгодные комплекты -->
-             <div class="container profit-kits">
-                    <h1>Выгодные комплекты</h1>
+        <div class="profit-cits-wrapper container">
+            <h1 class="profit-kits__head">Выгодные комплекты</h1>
+            <!-- Выгодные комплекты -->
+            <div class="container profit-kits">
                 <div class="row box-shadow profit-kits__container">
-                        <!-- Первый продукт -->
+                    <!-- Первый продукт -->
                     <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
                         <div class="product-labels">
                             <div class="product-labels__new">Новинка</div>
@@ -260,7 +302,8 @@
                                 <img class="brick-picture" src="./img/products/vatten.png" alt="">
                             </div>
                             <div class="product-info">
-                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный</h4>
+                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный
+                                </h4>
                                 <div class="product-info__price">
                                     <div class="product-info__price--old">6 000 руб</div>
                                     <div class="product-info__price--new">7 000 руб</div>
@@ -279,7 +322,8 @@
                                 <img class="brick-picture" src="./img/products/boil.png" alt="">
                             </div>
                             <div class="product-info">
-                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный</h4>
+                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный
+                                </h4>
                                 <div class="product-info__price">
                                     <div class="product-info__price--old">6 000 руб</div>
                                     <div class="product-info__price--new">7 000 руб</div>
@@ -304,83 +348,104 @@
                 </div>
             </div>
 
-       <!-- Выгодные комплекты -->
-       <div class="container profit-kits">
-        <div class="row box-shadow profit-kits__container">
-            <!-- Первый продукт -->
-            <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
-                <div class="product-labels">
-                    <div class="product-labels__new">Новинка</div>
-                    <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
-                    <div class="product-labels__bonus">Установка 0</div>
-                    <div class="product-labels__present"></div>
-                </div>
-                <div class="profit-product">
-                    <div class="product-img">
-                        <img class="brick-picture" src="img/products/vatten.png" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный</h4>
-                        <div class="product-info__price">
-                            <div class="product-info__price--old">6 000 руб</div>
-                            <div class="product-info__price--new">7 000 руб</div>
+            <!-- Выгодные комплекты -->
+            <div class="container profit-kits">
+                <div class="row box-shadow profit-kits__container">
+                    <!-- Первый продукт -->
+                    <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
+                        <div class="product-labels">
+                            <div class="product-labels__new">Новинка</div>
+                            <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
+                            <div class="product-labels__bonus">Установка 0</div>
+                            <div class="product-labels__present"></div>
+                        </div>
+                        <div class="profit-product">
+                            <div class="product-img">
+                                <img class="brick-picture" src="img/products/vatten.png" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный
+                                </h4>
+                                <div class="product-info__price">
+                                    <div class="product-info__price--old">6 000 руб</div>
+                                    <div class="product-info__price--new">7 000 руб</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Второй продукт -->
-            <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
-                <div class="product-labels">
-                    <div class="product-labels__new">Новинка</div>
-                    <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
-                </div>
-                <div class="profit-product">
-                    <div class="product-img profit-img">
-                        <img class="brick-picture" src="img/products/boil.png" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный</h4>
-                        <div class="product-info__price">
-                            <div class="product-info__price--old">6 000 руб</div>
-                            <div class="product-info__price--new">7 000 руб</div>
+                    <!-- Второй продукт -->
+                    <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
+                        <div class="product-labels">
+                            <div class="product-labels__new">Новинка</div>
+                            <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
+                        </div>
+                        <div class="profit-product">
+                            <div class="product-img profit-img">
+                                <img class="brick-picture" src="img/products/boil.png" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный
+                                </h4>
+                                <div class="product-info__price">
+                                    <div class="product-info__price--old">6 000 руб</div>
+                                    <div class="product-info__price--new">7 000 руб</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-8 col-sm-5  col-lg-2 profit-price">
-                <h3>Итого:</h3>
-                <div class="profit-price__basket">
-                    <span class="profit-price__price">12 000 руб.</span>
-                    <div class="button profit-price__btn"></div>
-                </div>
-                <div class="profit-price__gain">
-                    <p>выгода 1200 руб.</p>
-                </div>
-                <div class="profit-price__service">
-                    <span class="icon icon-key"></span>
-                    <p>бесплатная доставка и установка</p>
+                    <div class="col-8 col-sm-5  col-lg-2 profit-price">
+                        <h3>Итого:</h3>
+                        <div class="profit-price__basket">
+                            <span class="profit-price__price">12 000 руб.</span>
+                            <div class="button profit-price__btn"></div>
+                        </div>
+                        <div class="profit-price__gain">
+                            <p>выгода 1200 руб.</p>
+                        </div>
+                        <div class="profit-price__service">
+                            <span class="icon icon-key"></span>
+                            <p>бесплатная доставка и установка</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         <!-- Табы - описание и характеристики -->
         <div class="container tab-wrapper">
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
                         aria-controls="nav-home" aria-selected="true">Описание</a>
-                    <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-                        aria-controls="nav-profile" aria-selected="false">Характеристики товара</a>
+                    <a class="nav-item nav-link active" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                        role="tab" aria-controls="nav-profile" aria-selected="false">Характеристики товара</a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
 
                 <!-- Описание продукта  -->
                 <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        Описание продукта .....
+                    <div class="row">
+                        <div class="col-12 col-md-6 product-description">
+                            <h4 class="product-description__head">Vatten V41WE кулер напольный</h4>
+                            <p class="product-description__text">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur perferendis
+                                ducimus repudiandae dolore dolorem quasi harum beatae quia unde natus,
+                                reiciendis atque! Cum, delectus unde. Incidunt magnam alid vero? Nesciunt?
+                                reiciendis atque! Cum, delectus unde. Incidunt magnam alvero? Nesciunt?
+                                reiciendis atque! Cum, delectus unde. Incidunt magnam aliqiunt?
+                                reiciendis atque! Cum, delectus unde. Incidunt magnam aliquid ve
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=2mDPgVWG_Y8">
+                                <img class="img-fluid" src="http://img.youtube.com/vi/2mDPgVWG_Y8/mqdefault.jpg" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <!-- Таблица характеристик продукта -->
-                <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="tab-pane fade show active" id="nav-profile" role="tabpanel"
+                    aria-labelledby="nav-profile-tab">
                     <table class="table table-striped">
 
                         <tbody class="product-table">
@@ -424,74 +489,74 @@
                                 <th class="characteristic-name" scope="row">Объем бака хол.воды</th>
                                 <td class="characteristic-value">0.60 л</td>
                             </tr>
-                           
+
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
 
-    <!-- Блок нескромных обещаний -->
+        <!-- Блок нескромных обещаний -->
         <div class="container bonus-wrapper">
             <div class="bonus">
                 <h1>Выгода покупки</h1>
                 <h2> Гарантия на этот куллер - <span class="bonus--text-red">5 лет</span>.</h2>
-                 <h2>И это только у нас</h2>
-                 <div class="bonus-body">
+                <h2>И это только у нас</h2>
+                <div class="bonus-body">
                     <div class="bonus-body__text">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                         </p>
-                     </div>
-                     <div class="bonus-body__picture">
-                         <img src="img/icons/icon-certificate.png" alt="">
-                     </div>
-                 </div>
+                        </p>
+                    </div>
+                    <div class="bonus-body__picture">
+                        <img src="img/icons/icon-certificate.png" alt="">
+                    </div>
+                </div>
             </div>
             <div class="bonus">
                 <h1>Скидка при самовывозе</h1>
                 <h2> Гарантия на этот куллер - <span class="bonus--text-red">5 лет</span>.</h2>
-                 <h2>И это только у нас</h2>
-                 <div class="bonus-body bonus-body--reverse">
+                <h2>И это только у нас</h2>
+                <div class="bonus-body bonus-body--reverse">
                     <div class="bonus-body__text">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                         </p>
-                     </div>
-                     <div class="bonus-body__picture">
-                         <img src="img/icons/icon-product.png" alt="">
-                     </div>
-                 </div>
+                        </p>
+                    </div>
+                    <div class="bonus-body__picture">
+                        <img src="img/icons/icon-product.png" alt="">
+                    </div>
+                </div>
             </div>
             <div class="bonus">
                 <h1>Быстрая доставка</h1>
                 <h2>Гарантия на этот куллер - <span class="bonus--text-red">5 лет</span>.</h2>
-                 <h2>И это только у нас</h2>
-                 <div class="bonus-body">
+                <h2>И это только у нас</h2>
+                <div class="bonus-body">
                     <div class="bonus-body__text">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                            Excepteur sint occaecat 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                         </p>
-                     </div>
-                     <div class="bonus-body__picture">
-                         <img src="img/icons/icon-order.png" alt="">
-                     </div>
-                 </div>
+                        </p>
+                    </div>
+                    <div class="bonus-body__picture">
+                        <img src="img/icons/icon-order.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -532,53 +597,20 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                    <div class="container footer-bottom__rights"> 
-                         2018 &#169; 101cooler.ru Все права защищены ООО «Аквасфера» ОГРН 1085256001050  
-                    </div>
+                <div class="container footer-bottom__rights">
+                    2018 &#169; 101cooler.ru Все права защищены ООО «Аквасфера» ОГРН 1085256001050
+                </div>
             </div>
         </footer>
 
     </div>
 
     <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/fancy/jquery.fancybox.min.js"></script>
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script>
-        $('.cart-slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            // dots: true,
-            fade: true,
-            responsive: [{
-                    breakpoint: 992,
-                    settings: {
-                       dots: true,
-                    }
-                } ]
-        });
-
-        $('.cart-slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.cart-slider-for',
-            verticalSwiping: true,
-            arrows: false,
-            dots: false,
-            focusOnSelect: true,
-            vertical: true,
-            
-            // responsive: [{
-            //         breakpoint: 992,
-            //         settings: "unslick"
-                    
-            //     } ]
-        });
-    </script>
-
 
 </body>
 

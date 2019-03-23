@@ -60,9 +60,18 @@ a:focus {
   color: #000;
 }
 
+label {
+  font-size: 1.2rem;
+}
+
+input, textarea {
+  font-size: 1.4rem !important; 
+}
+
 button {
   outline: none;
   border: none;
+  padding: 1rem;
 
   &:hover,
   &:focus {

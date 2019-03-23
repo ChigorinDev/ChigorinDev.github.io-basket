@@ -16,7 +16,7 @@
 <body>
     <div class="container-fluid main-wrapper">
 
-        <!-- Header and navigation -->
+        <!-- Шапка сайта  -->
         <header class="header">
             <div class="header-info container">
                 <!-- Logo -->
@@ -28,34 +28,36 @@
                         Продажа Куллеров и Фильтров для воды в Нижнем Новгороде
                     </p>
                 </div>
-                <!-- Phone  -->
-                <div class="header-phone">
-                    <!-- <span class="header-phone__city">Нижний Новгород</span> -->
-                    <a href="#" class="icon-link">
-                        <img src="img/icons/icon-phone.png" class="header-phone__icon" alt="phone">
-                        <span class="header-phone__number">(831) 429-07-48</span>
-                    </a>
+                <div class="header-contacts-wrapper">
+                    <!-- Phone  -->
+                    <div class="header-phone">
+                        <span class="header-phone__city">Нижний Новгород</span>
+                        <a href="#" class="icon-link">
+                            <span class="icon-phone"></span>
+                            <div class="header-phone__number">(831) 429-07-48</div>
+                        </a>
+                    </div>
+                    <!-- Email -->
+                    <div class="header-mail">
+                        <a href="#" class="icon-link">
+                            <span class="icon-email"></span>
+                            <div class="header-mail__address">info@101cooler.ru</div>
+                        </a>
+                    </div>
                 </div>
-                <!-- Email -->
-                <div class="header-mail">
-                    <a href="#" class="icon-link">
-                        <img src="img/icons/icon-mail.png" class="header-mail__icon" alt="email">
-                        <span class="header-mail__address">info@101cooler.ru</span>
-                    </a>
-                </div>
-                <!-- Profile links -->
+                <!-- Ссылки профиля -->
                 <div class="header-links">
                     <a href="#" class="icon-link">
-                        <img src="img/icons/icon-comparison.png" class="header-links__compare" alt="comparison">
+                        <span class="icon-comparison"></span>
                     </a>
                     <a href="#" class="icon-link">
-                        <img src="img/icons/icon-profile.png" class="header-links__profile" alt="profile">
+                        <span class="icon-profile"></span>
                     </a>
                 </div>
-                <!-- Basket and product price -->
+                <!-- Корзина, количество продуктов в ней и общая стоимость-->
                 <div class="header-basket">
                     <a href="#" class="icon-link">
-                        <img src="img/icons/icon-basket.png" class="header-bascket__icon" alt="basket">
+                        <span class="icon-basket"></span>
                     </a>
 
                     <p class="header-basket__text">В корзине
@@ -66,10 +68,9 @@
                 </div>
             </div>
 
-            <!-- Navigation -->
+            <!-- Маеню навигации -->
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <!-- <img class="header-logo__img" src="/img/logo.svg" alt="logo"> -->
                     <a class="navbar-brand" href="#"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +81,8 @@
                         <ul class="nav navbar-nav">
 
                             <li class="nav-item dropdown">
-                                <a href="https://css-tricks.com/almanac/properties/f/filter/" class="dropdown-toggle nav-link" data-toggle="dropdown">Куллеры<b class="caret"></b></a>
+                                <a href="https://css-tricks.com/almanac/properties/f/filter/"
+                                    class="nav-link">Куллеры</a>
 
                                 <ul class="dropdown-menu hover-products container">
                                     <div class="hover-product">
@@ -134,16 +136,57 @@
                                         <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
                                         <li class="hover-product__link"><a href="#">С холодильником</a></li>
                                         <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
-                                        <!-- <li class="hover-product__link"><a href="#">Без нагрева</a></li>
-                                        <li class="hover-product__link"><a href="#">серебристые</a></li> -->
+
                                     </div>
 
                                 </ul>
 
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item dropdown">
                                 <a class="nav-link" href="#">Пурифайеры</a>
+                                <ul class="dropdown-menu hover-products container">
+                                    <div class="hover-product">
+                                        <div class="hover-product__head">
+                                            <img class="hover-product__img" src="img/products/b-silver.png" alt="kuler">
+                                            <a class="hover-product__category" href="#">Напольные</a>
+                                        </div>
+                                        <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                                        <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                                        <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                                        <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                                        <li class="hover-product__link"><a href="#">серебристые</a></li>
+                                    </div>
+                                    <div class="hover-product">
+                                        <div class="hover-product__head">
+                                            <img class="hover-product__img" src="img/products/Nastolnyj-kuler.png"
+                                                alt="kuler">
+                                            <a class="hover-product__category" href="#">Напольные</a>
+                                        </div>
+                                        <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                                        <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                                        <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                                        <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                                        <li class="hover-product__link"><a href="#">серебристые</a></li>
+                                    </div>
+                                    <div class="hover-product">
+                                        <div class="hover-product__head">
+                                            <img class="hover-product__img" src="img/products/bochka.png" alt="kuler">
+                                            <a class="hover-product__category" href="#">Напольные</a>
+                                        </div>
+                                        <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                                        <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                                        <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                                        <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                                        <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                                        <li class="hover-product__link"><a href="#">серебристые</a></li>
+                                    </div>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Сервис Центр</a>
@@ -201,7 +244,8 @@
 
                 <div class="br-gr-7  bg-blue">
                     <a class="brick-link" href="#">Обслуживание пурифайера <span class="icon-arrow"></span></a>
-                    <img class="brick-picture" src="img/products/good-guy.png" alt="хороший парень что-то там чинит...молодец">
+                    <img class="brick-picture" src="img/products/good-guy.png"
+                        alt="хороший парень что-то там чинит...молодец">
                 </div>
 
                 <div class="br-gr-8  bg-grey-2">
@@ -237,80 +281,27 @@
                 </div>
             </div>
         </div>
-        <!-- Выгодные комплекты -->
-        <div class="container profit-kits">
-            <h1 class="profit-kits__head text-center">Выгодные комплекты</h1>
-            <div class="row box-shadow profit-kits__container">
-                <!-- Первый продукт -->
-                <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
-                    <div class="product-labels">
-                        <div class="product-labels__new">Новинка</div>
-                        <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
-                    </div>
-                    <div class="profit-product">
-                        <div class="product-img">
-                            <img class="brick-picture" src="img/products/vatten.png" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный</h4>
-                            <div class="product-info__price">
-                                <div class="product-info__price--old">6 000 руб</div>
-                                <div class="product-info__price--new">7 000 руб</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Второй продукт -->
-                <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
-                    <div class="product-labels">
-                        <div class="product-labels__new">Новинка</div>
-                        <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
-                    </div>
-                    <div class="profit-product">
-                        <div class="product-img profit-img">
-                            <img class="brick-picture" src="img/products/boil.png" alt="">
-                        </div>
-                        <div class="product-info">
-                            <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный</h4>
-                            <div class="product-info__price">
-                                <div class="product-info__price--old">6 000 руб</div>
-                                <div class="product-info__price--new">7 000 руб</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-8 col-sm-5  col-lg-2 profit-price">
-                    <h3>Итого:</h3>
-                    <div class="profit-price__basket">
-                        <span class="profit-price__price">12 000 руб.</span>
-                        <div class="button profit-price__btn"></div>
-                    </div>
-                    <div class="profit-price__gain">
-                        <p>выгода 1200 руб.</p>
-                    </div>
-                    <div class="profit-price__service">
-                        <span class="icon icon-key"></span>
-                        <p>бесплатная доставка и установка</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-          <!-- Выгодные комплекты -->
-          <div class="container profit-kits">
+        <div class="profit-cits-wrapper container">
+            <h1 class="profit-kits__head text-center">Выгодные комплекты</h1>
+            <!-- Выгодные комплекты -->
+            <div class="container profit-kits">
                 <div class="row box-shadow profit-kits__container">
                     <!-- Первый продукт -->
                     <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
                         <div class="product-labels">
                             <div class="product-labels__new">Новинка</div>
                             <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
+                            <div class="product-labels__bonus">Установка 0</div>
+                            <div class="product-labels__present"></div>
                         </div>
                         <div class="profit-product">
                             <div class="product-img">
-                                <img class="brick-picture" src="img/products/vatten.png" alt="">
+                                <img class="brick-picture" src="./img/products/vatten.png" alt="">
                             </div>
                             <div class="product-info">
-                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный</h4>
+                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный
+                                </h4>
                                 <div class="product-info__price">
                                     <div class="product-info__price--old">6 000 руб</div>
                                     <div class="product-info__price--new">7 000 руб</div>
@@ -326,10 +317,11 @@
                         </div>
                         <div class="profit-product">
                             <div class="product-img profit-img">
-                                <img class="brick-picture" src="img/products/boil.png" alt="">
+                                <img class="brick-picture" src="./img/products/boil.png" alt="">
                             </div>
                             <div class="product-info">
-                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный</h4>
+                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный
+                                </h4>
                                 <div class="product-info__price">
                                     <div class="product-info__price--old">6 000 руб</div>
                                     <div class="product-info__price--new">7 000 руб</div>
@@ -354,27 +346,83 @@
                 </div>
             </div>
 
+            <!-- Выгодные комплекты -->
+            <div class="container profit-kits">
+                <div class="row box-shadow profit-kits__container">
+                    <!-- Первый продукт -->
+                    <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
+                        <div class="product-labels">
+                            <div class="product-labels__new">Новинка</div>
+                            <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
+                            <div class="product-labels__bonus">Установка 0</div>
+                            <div class="product-labels__present"></div>
+                        </div>
+                        <div class="profit-product">
+                            <div class="product-img">
+                                <img class="brick-picture" src="img/products/vatten.png" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный
+                                </h4>
+                                <div class="product-info__price">
+                                    <div class="product-info__price--old">6 000 руб</div>
+                                    <div class="product-info__price--new">7 000 руб</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Второй продукт -->
+                    <div class="col-12 col-md-6 col-lg-4 profit-wrapper">
+                        <div class="product-labels">
+                            <div class="product-labels__new">Новинка</div>
+                            <div class="product-labels__sale"><span id="cut-price">-200 </span>руб</div>
+                        </div>
+                        <div class="profit-product">
+                            <div class="product-img profit-img">
+                                <img class="brick-picture" src="img/products/boil.png" alt="">
+                            </div>
+                            <div class="product-info">
+                                <h4 class="product-info__name">Vatten V41WE кулер напольный Vatten V41WE кулер напольный
+                                </h4>
+                                <div class="product-info__price">
+                                    <div class="product-info__price--old">6 000 руб</div>
+                                    <div class="product-info__price--new">7 000 руб</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-sm-5  col-lg-2 profit-price">
+                        <h3>Итого:</h3>
+                        <div class="profit-price__basket">
+                            <span class="profit-price__price">12 000 руб.</span>
+                            <div class="button profit-price__btn"></div>
+                        </div>
+                        <div class="profit-price__gain">
+                            <p>выгода 1200 руб.</p>
+                        </div>
+                        <div class="profit-price__service">
+                            <span class="icon icon-key"></span>
+                            <p>бесплатная доставка и установка</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- Наш магазин - слайдер -->
         <div class="slider-wrapper container">
             <h1 class="text-center">Наш магазин</h1>
             <div class="our-shop-slider">
                 <div class="our-shop">
-                    <img class="our-shop__img" src="img/sales/sale-card-1.png" alt="">
+                    <img class="our-shop__img" src="img/slide-example.jpg" alt="">
                 </div>
                 <div class="our-shop">
-                    <img class="our-shop__img" src="img/sales/sale-card-2.png" alt="">
+                    <img class="our-shop__img" src="img/slide-example.jpg" alt="">
                 </div>
                 <div class="our-shop">
-                    <img class="our-shop__img" src="img/sales/sale-card-3.png" alt="">
-                </div>
-                <div class="our-shop">
-                    <img class="our-shop__img" src="img/sales/sale-card-3.png" alt="">
-                </div>
-                <div class="our-shop">
-                    <img class="our-shop__img" src="img/sales/sale-card-3.png" alt="">
-                </div>
-                <div class="our-shop">
-                    <img class="our-shop__img" src="img/sales/sale-card-3.png" alt="">
+                    <img class="our-shop__img" src="img/slide-example.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -386,8 +434,8 @@
                 <div class="card">
                     <div class="card-header" id="headingOne">
 
-                        <div class="collapse-head" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
+                        <div class="collapse-head" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
                             <span class="icon-test round-icon"></span>
                             <h4 class="collapse-head__text">Как заказать?</h4>
                         </div>
@@ -406,8 +454,8 @@
                 </div>
                 <div class="card">
                     <div class="card-header" id="headingTwo">
-                        <div class="collapse-head" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                            aria-controls="collapseTwo">
+                        <div class="collapse-head" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="true" aria-controls="collapseTwo">
                             <span class="icon-card round-icon"></span>
                             <h4 class="collapse-head__text">Как оплатить?</h4>
                         </div>
@@ -425,8 +473,8 @@
                 </div>
                 <div class="card">
                     <div class="card-header" id="headingThree">
-                        <div class="collapse-head" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
-                            aria-controls="collapseThree">
+                        <div class="collapse-head" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="true" aria-controls="collapseThree">
                             <span class="icon-box round-icon"></span>
                             <h4 class="collapse-head__text">Когда доставите?</h4>
                         </div>
@@ -444,8 +492,8 @@
                 </div>
                 <div class="card">
                     <div class="card-header" id="headingFour">
-                        <div class="collapse-head" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true"
-                            aria-controls="collapseFour">
+                        <div class="collapse-head" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="true" aria-controls="collapseFour">
                             <span class="icon-hand round-icon"></span>
                             <h4 class="collapse-head__text">Как купить дешевле?</h4>
                         </div>
@@ -464,7 +512,8 @@
             </div>
 
             <div class="write-to">
-                <div class="write-to-btn red-buy-btn">Написать директору</div>
+                <div class="write-to-btn red-buy-btn" data-toggle="modal" data-target="#writeToModal">Написать директору
+                </div>
                 <div class="write-to__avatar">
                     <img src="img/chair-face.png" alt="chair face">
                 </div>
@@ -476,12 +525,11 @@
             <h1 class="text-center">Отзывы</h1>
             <div class="feedback-wrapper feedback">
                 <div class="feedback__box ">
-                        <img class="feedback__img" src="img/feedback/Screenshot_21.png" alt="">
+                    <img class="feedback__img" src="img/feedback/Screenshot_21.png" alt="">
                 </div>
                 <div class="feedback__box ">
-                        <img class="feedback__img" src="img/feedback/PS.png" alt="">
+                    <img class="feedback__img" src="img/feedback/PS.png" alt="">
                 </div>
-
                 <div class="write-to-btn red-buy-btn">Оставить отзыв</div>
             </div>
         </div>
@@ -499,9 +547,6 @@
                 <div class="partners-item">
                     <img class="partners-item__img" src="img/partners/ashan.svg" alt="">
                 </div>
-                <!-- <div class="partners-item">
-                    <img class="partners-item__img" src="img/partners/megafon.svg" alt="">
-                </div> -->
                 <div class="partners-item">
                     <img class="partners-item__img" src="img/partners/sberbank.svg" alt="">
                 </div>
@@ -561,85 +606,62 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="container footer-bottom__rights"> 
-                     2018 &#169; 101cooler.ru Все права защищены ООО «Аквасфера» ОГРН 1085256001050  
+                <div class="container footer-bottom__rights">
+                    2018 &#169; 101cooler.ru Все права защищены ООО «Аквасфера» ОГРН 1085256001050
                 </div>
             </div>
         </footer>
 
     </div>
 
+
+    <!-- Модальное окно - написать директору -->
+    <div class="modal fade" id="writeToModal" tabindex="-1" role="dialog" aria-labelledby="writeToModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle">Написать директору</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="userName">Ваше имя* :</label>
+                            <input required type="text" class="form-control" id="userName" placeholder="ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="userNumber">Контактный телефон* :</label>
+                            <input required type="tel" class="form-control" id="userNumber" placeholder=9-999-999-9998>
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email:</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="ваш почтовый адресс">
+                        </div>
+                        <div class="form-group">
+                            <label for="userIssue">Ваш вопрос:</label>
+                            <textarea class="form-control" id="userIssue" rows="3"></textarea>
+                        </div>
+                    </div>
+
+
+                    <div class="modal-footer border-top-0 d-flex justify-content-center">
+                        <button type="submit" class="modal-btn red-buy-btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
     <script src="js/jquery/dist/jquery.min.js"></script>
     <script src="js/popper/popper.min.js"></script>
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script type="text/javascript">
-        $('.sale-card-slider').slick({
-            arrows: false,
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            responsive: [{
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-
-        $('.our-shop-slider').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            cssEase: 'linear',
-            variableWidth: true,
-            infinite: true,
-            dots: true,
-            touchMove: true,
-            arrows: true,
-            prevArrow: '<button class="slick-prev"> < </button>',
-            nextArrow: '<button class="slick-next"> > </button>',
-            responsive: [{
-                    breakpoint: 1200,
-                    settings: {
-                        arrows: false,
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                   
-                        slidesToShow: 3,
-                        arrows: false,
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                }
-            ]
-        });
-    </script>
 </body>
 
 </html>

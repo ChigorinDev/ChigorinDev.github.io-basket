@@ -39,8 +39,12 @@
     }
 }
 
+.header-contacts-wrapper {
+    display: flex;
+}
+
 .header-phone {
-    padding: 1rem;
+    padding: 0.2rem .5rem;
     @include flex(flex-start, unset);
     flex-wrap: wrap;
 
@@ -61,7 +65,7 @@
 }
 
 .header-mail {
-    padding: 1rem;
+    padding: .2rem .5rem;
     @include flex(flex-start, unset);
     flex-wrap: wrap;
 
@@ -84,7 +88,7 @@
     @include flex(space-between, center);
     padding: 1rem;
 
-    &__text {
+     &__text {
         font-size: 1.2rem;
         font-weight: 600;
         width: 80%;
@@ -191,12 +195,21 @@
 .icon-search {
     background: url(../img/icons/icon-search.png) center no-repeat;
     border: none;
+    width: 2rem;
+    height: 2rem;
     background-size: contain;
+    cursor: pointer !important;
     &:focus {
         outline: none;
     }
 }
 
+.dropdown:hover>.dropdown-menu {
+    display: flex;
+    max-width: 75vw;
+    justify-content: space-evenly;
+  }
+  
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) { 
@@ -216,13 +229,47 @@
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
 
+    .header {
+        span {font-size: 1.2rem;}
+    }
+    .header-logo {
+        width: auto;
+        &__text {display: none;}
+    }
+
+    .header-search {
+        border-color: #000;
+        border-radius: 0;
+        width: 90%;
+    }
+
+    .icon-search {
+        background: url(../img/icons/icon-search-2.png) center no-repeat;
+        background-size: contain;
+    }
+    
+    .header-contacts-wrapper {
+        display: block;
+    }
+
+    .header-phone__number,
+    .header-mail__address {
+        font-size: 1.3rem;
+    }
+
     .header-info {
         position: absolute;
-        top: 1.9rem;
+        top: 3.5rem;
     } 
     .navbar {
         background-color: transparent;
         padding-bottom: 1rem;
+        min-height: 7.5rem;
+
+        & + .container {
+            margin-top: 2.2rem;
+        }
+
     .nav-link {
         color: $text-color;
         text-align: end;
@@ -231,13 +278,7 @@
     .custom-navbar {
         display: block;
     } 
-    .header {
-        span {font-size: 1.2rem;}
-    }
-    .header-logo {
-        width: auto;
-        &__text {display: none;}
-    }
+
     .navbar-toggler-icon {
         margin-top: -1rem;
     }
@@ -257,11 +298,10 @@
     }
     .header-phone,
     .header-mail {
-        display: none;
+       padding: 0;
     }
     .hover-products {
-        // width: 720px;
-        width: 520px;
+        width: 52rem;
     }
 
 }
@@ -272,6 +312,13 @@
         justify-content: flex-start;
     }
 
+}
+
+@media (max-width: 450px) {
+    .header-phone,
+    .header-mail {
+       display: none;
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
