@@ -77,12 +77,21 @@ button::after {
     
 }
 
+
+
 .icon {
     display: inline-block;
     width: 2.4rem;
     height: 2.4rem;
     background-size: contain;
 }
+
+.icon-service {
+    width: 5rem;
+    height: 5rem;
+    background-size: contain;
+}
+
 
 .icon-email {
     @extend .icon;
@@ -123,6 +132,47 @@ button::after {
    
 }
 
+// Footer icons
+.icon-cash {
+    @extend .icon;
+    background: url(../img/icons/icon-cash.png) center no-repeat;
+}
+.icon-doc {
+    @extend .icon;
+    background: url(../img/icons/icon-doc.png) center no-repeat;
+}
+.icon-pay-cards {
+    @extend .icon;
+    background: url(../img/icons/icon-pay-cards.png) center no-repeat;
+}
+
+.icon-walet {
+    @extend .icon;
+    @extend .icon-service;
+    background: url(../img/icons/icon-walet.png) center no-repeat;
+}
+.icon-webmoney {
+    @extend .icon;
+    @extend .icon-service;
+    background: url(../img/icons/icon-webmoney.png) center no-repeat;
+}
+.icon-mastercard {
+    @extend .icon;
+    @extend .icon-service;
+    background: url(../img/icons/icon-mastercard.png) center no-repeat;
+}
+.icon-qiwi {
+    @extend .icon;
+    @extend .icon-service;
+    background: url(../img/icons/icon-qiwi.png) center no-repeat;
+}
+.icon-visa {
+    @extend .icon;
+    @extend .icon-service;
+    background: url(../img/icons/icon-visa.png) center no-repeat;
+}
+
+
 .round-icon {
     background-color: $green-color;
     width: 4rem;
@@ -131,6 +181,8 @@ button::after {
     display: inline-block;
     cursor: pointer;
 }
+
+
 
 .box-shadow {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1), 1px 6px 6px rgba(0,0,0,0.1);

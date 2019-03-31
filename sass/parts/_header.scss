@@ -111,6 +111,11 @@
 .nav-link {
     color: #fff;
     font-size: 1.6rem;
+    transition: color .4s;
+
+    &:hover {
+        color: #000;
+    }
 }
 
 .dropdown-menu .nav-link {

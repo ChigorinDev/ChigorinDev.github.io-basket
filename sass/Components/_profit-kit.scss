@@ -16,6 +16,38 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    min-height: 31rem;
+}
+
+
+.profit-wrapper:after {
+    display: block;
+    content: '';
+    height: 90%;
+    width: 1px;
+    background-color: #959595;
+    position: absolute;
+    right: -1rem;
+}
+
+.profit-wrapper:before{
+    @include flex(center, center);
+    font-size: 2.4rem;
+    content: '+';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: -2rem;
+    top: 6rem;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.profit-wrapper:nth-child(2):before,
+.profit-wrapper:nth-child(3):before {
+    @extend .profit-wrapper:before;
+    content: '=';
 }
 
 .profit-product {
@@ -86,6 +118,7 @@
 
 .profit-price {
     padding: 0;
+    margin-right: 2rem;
 
     &__basket {
         @include flex(space-between, center);
@@ -136,19 +169,22 @@
     }
 }
 
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
 
 @media (max-width: 991.98px) {
-
+    .profit-wrapper:after,
+    .profit-wrapper:before {
+        display: none
+    }  
 }
 
 @media (max-width: 767.98px) {
     .profit-wrapper {
         padding: 2rem;
+        margin-bottom: 2rem;
     }
     .profit-price {
         padding: 1.5rem;
+        margin-left: 1rem;
 
         &__basket {
             margin-top: 0;
@@ -160,6 +196,34 @@
     }
     .product-info {
         width: 70%;
+    }
+
+    .profit-wrapper:after {
+        display: block;
+        height: 1px;
+        width: 60%;
+        bottom: 1rem;
+        left: 0;
+    }
+    
+    .profit-wrapper:before{
+        @include flex(center, center);
+        font-size: 2.4rem;
+        content: '+';
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: unset;
+        right: unset;
+        bottom: 0;
+        z-index: 3;
+        background-color: #fff;
+        border-radius: 50%;
+    }
+    
+    .profit-wrapper:nth-child(2):before,
+    .profit-wrapper:nth-child(3):before {
+        content: '=';
     }
 }
 

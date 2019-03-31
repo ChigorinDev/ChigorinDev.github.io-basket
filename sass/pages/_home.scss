@@ -90,6 +90,13 @@
     object-fit: cover;
 }
 
+.modal-content {
+    padding: 1rem;
+    .close {
+        font-size: 2.4rem;
+    }
+}
+
 
 
 // Large devices (desktops, less than 1200px)

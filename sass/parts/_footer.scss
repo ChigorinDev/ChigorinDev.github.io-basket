@@ -25,7 +25,8 @@
 
     &__link {
         color: #fff;
-        display: block;
+        display: flex;
+        align-items: center;
         width: 100%;
         margin-bottom: .5rem;
         line-height: 1.4;
@@ -34,6 +35,10 @@
         &:hover,
         &:focus {
             color: $red-color;
+        }
+
+        span {
+            margin-right: .4rem;
         }
     }
 }
@@ -47,13 +52,6 @@
         padding: 2rem 1rem 0;
         color: #ffffff;
     }
-}
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {}
-
-@media (max-width: 991.98px) {
-
 }
 
 @media (max-width: 767.98px) {

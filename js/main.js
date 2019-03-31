@@ -1,5 +1,4 @@
-$(document).ready(function () {
-    
+
     //Удаление hover dropdown на мобильных устройтсвах
     function checkWidth() {
         let windowSize = $(window).width();
@@ -11,6 +10,9 @@ $(document).ready(function () {
     checkWidth();
     // Бинд
     $(window).resize(checkWidth);
+
+    $(document).ready(function () {
+    
 
 // Слайдер с купонами (главная страница)
     $('.sale-card-slider').slick({

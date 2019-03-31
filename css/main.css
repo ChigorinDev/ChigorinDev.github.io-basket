@@ -492,10 +492,15 @@ button::after {
     transform: scale(1);
     transform-origin: 0% 0; }
 
-.icon, .icon-email, .icon-phone, .icon-profile, .icon-comparison, .icon-basket, .icon-key, .icon-location, .icon-delivery {
+.icon, .icon-email, .icon-phone, .icon-profile, .icon-comparison, .icon-basket, .icon-key, .icon-location, .icon-delivery, .icon-cash, .icon-doc, .icon-pay-cards, .icon-walet, .icon-webmoney, .icon-mastercard, .icon-qiwi, .icon-visa {
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
+  background-size: contain; }
+
+.icon-service, .icon-walet, .icon-webmoney, .icon-mastercard, .icon-qiwi, .icon-visa {
+  width: 5rem;
+  height: 5rem;
   background-size: contain; }
 
 .icon-email {
@@ -524,6 +529,30 @@ button::after {
 
 .icon-delivery {
   background: url(../img/icons/icon-deliver.png) center no-repeat; }
+
+.icon-cash {
+  background: url(../img/icons/icon-cash.png) center no-repeat; }
+
+.icon-doc {
+  background: url(../img/icons/icon-doc.png) center no-repeat; }
+
+.icon-pay-cards {
+  background: url(../img/icons/icon-pay-cards.png) center no-repeat; }
+
+.icon-walet {
+  background: url(../img/icons/icon-walet.png) center no-repeat; }
+
+.icon-webmoney {
+  background: url(../img/icons/icon-webmoney.png) center no-repeat; }
+
+.icon-mastercard {
+  background: url(../img/icons/icon-mastercard.png) center no-repeat; }
+
+.icon-qiwi {
+  background: url(../img/icons/icon-qiwi.png) center no-repeat; }
+
+.icon-visa {
+  background: url(../img/icons/icon-visa.png) center no-repeat; }
 
 .round-icon {
   background-color: #027468;
@@ -676,7 +705,10 @@ button::after {
 
 .nav-link {
   color: #fff;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  transition: color .4s; }
+  .nav-link:hover {
+    color: #000; }
 
 .dropdown-menu .nav-link {
   color: #000; }
@@ -884,13 +916,16 @@ button::after {
   margin-top: 2.5rem; }
   .footer-box__link {
     color: #fff;
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     margin-bottom: .5rem;
     line-height: 1.4;
     transition: color .4s; }
     .footer-box__link:hover, .footer-box__link:focus {
       color: #b6030f; }
+    .footer-box__link span {
+      margin-right: .4rem; }
 
 .footer-bottom {
   border-top: 1px solid #f6f4f4;
@@ -935,7 +970,43 @@ button::after {
 .profit-wrapper {
   display: flex;
   flex-wrap: wrap;
-  position: relative; }
+  position: relative;
+  min-height: 31rem; }
+
+.profit-wrapper:after {
+  display: block;
+  content: '';
+  height: 90%;
+  width: 1px;
+  background-color: #959595;
+  position: absolute;
+  right: -1rem; }
+
+.profit-wrapper:before, .profit-wrapper:nth-child(2):before,
+.profit-wrapper:nth-child(3):before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 2.4rem;
+  content: '+';
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: -2rem;
+  top: 6rem;
+  z-index: 3;
+  background-color: #fff;
+  border-radius: 50%; }
+
+.profit-wrapper:nth-child(2):before,
+.profit-wrapper:nth-child(3):before {
+  content: '='; }
 
 .profit-product {
   display: flex;
@@ -982,7 +1053,8 @@ button::after {
       font-size: 1.4rem; }
 
 .profit-price {
-  padding: 0; }
+  padding: 0;
+  margin-right: 2rem; }
   .profit-price__basket {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1021,24 +1093,62 @@ button::after {
   .profit-price__service {
     display: flex;
     text-transform: lowercase; }
-    .profit-price__service .icon, .profit-price__service .icon-email, .profit-price__service .icon-phone, .profit-price__service .icon-profile, .profit-price__service .icon-comparison, .profit-price__service .icon-basket, .profit-price__service .icon-key, .profit-price__service .icon-location, .profit-price__service .icon-delivery {
+    .profit-price__service .icon, .profit-price__service .icon-email, .profit-price__service .icon-phone, .profit-price__service .icon-profile, .profit-price__service .icon-comparison, .profit-price__service .icon-basket, .profit-price__service .icon-key, .profit-price__service .icon-location, .profit-price__service .icon-delivery, .profit-price__service .icon-cash, .profit-price__service .icon-doc, .profit-price__service .icon-pay-cards, .profit-price__service .icon-walet, .profit-price__service .icon-webmoney, .profit-price__service .icon-mastercard, .profit-price__service .icon-qiwi, .profit-price__service .icon-visa {
       width: 3.2rem; }
     .profit-price__service p {
       display: inline;
       margin-left: .5rem; }
 
+@media (max-width: 991.98px) {
+  .profit-wrapper:after, .profit-wrapper:before, .profit-wrapper:nth-child(2):before,
+  .profit-wrapper:nth-child(3):before {
+    display: none; } }
+
 @media (max-width: 767.98px) {
   .profit-wrapper {
-    padding: 2rem; }
+    padding: 2rem;
+    margin-bottom: 2rem; }
   .profit-price {
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    margin-left: 1rem; }
     .profit-price__basket {
       margin-top: 0;
       justify-content: space-evenly; }
     .profit-price__gain {
       width: 80%; }
   .product-info {
-    width: 70%; } }
+    width: 70%; }
+  .profit-wrapper:after {
+    display: block;
+    height: 1px;
+    width: 60%;
+    bottom: 1rem;
+    left: 0; }
+  .profit-wrapper:before, .profit-wrapper:nth-child(2):before,
+  .profit-wrapper:nth-child(3):before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 2.4rem;
+    content: '+';
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: unset;
+    right: unset;
+    bottom: 0;
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 50%; }
+  .profit-wrapper:nth-child(2):before,
+  .profit-wrapper:nth-child(3):before {
+    content: '='; } }
 
 .slider-wrapper {
   margin-top: 2rem; }
@@ -1552,6 +1662,11 @@ svg {
   max-width: 100%;
   height: auto;
   object-fit: cover; }
+
+.modal-content {
+  padding: 1rem; }
+  .modal-content .close {
+    font-size: 2.4rem; }
 
 @media (max-width: 991.98px) {
   .brick-link {
