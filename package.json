@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass sass/main.scss css/main.css -w"
+    "sass": "node-sass sass/main.scss css/main.css -w",
+    "filters": "node-sass sass/main-filters.scss css/filters.css -w"
   },
   "author": "",
   "license": "ISC",

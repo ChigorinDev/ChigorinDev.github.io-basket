@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <base href="/"> -->
+  <title>Куллеры</title>
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+  <link rel="stylesheet" href="css/filters.css">
+  <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.css">
+</head>
+
+<body>
+  <div class="container-fluid main-wrapper">
+
+    <!-- Шапка сайта  -->
+    <header class="header">
+      <div class="header-info container">
+        <!-- Logo -->
+        <div class="header-logo">
+          <a href="cart.html" class="header-logo__link">
+            <img class="header-logo__img" src="img/logo.svg" alt="logo">
+          </a>
+          <p class="header-logo__text">
+            Продажа Куллеров и Фильтров для воды в Нижнем Новгороде
+          </p>
+        </div>
+        <div class="header-contacts-wrapper">
+          <!-- Phone  -->
+          <div class="header-phone">
+            <span class="header-phone__city">Нижний Новгород</span>
+            <a href="#" class="icon-link">
+              <span class="icon-phone"></span>
+              <div class="header-phone__number">(831) 429-07-48</div>
+            </a>
+          </div>
+          <!-- Email -->
+          <div class="header-mail">
+            <a href="#" class="icon-link">
+              <span class="icon-email"></span>
+              <div class="header-mail__address">info@101cooler.ru</div>
+            </a>
+          </div>
+        </div>
+        <!-- Ссылки профиля -->
+        <div class="header-links">
+          <a href="#" class="icon-link">
+            <span class="icon-comparison"></span>
+          </a>
+          <a href="#" class="icon-link">
+            <span class="icon-profile"></span>
+          </a>
+        </div>
+        <!-- Корзина, количество продуктов в ней и общая стоимость-->
+        <div class="header-basket">
+          <a href="#" class="icon-link">
+            <span class="icon-basket"></span>
+          </a>
+
+          <p class="header-basket__text">В корзине
+            <span id="basket-quantity">1</span>
+            <span id="basket-product">товар</span>
+            <span class="header-basket__price" id="basket-price">17300</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Маеню навигации -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse custom-navbar" id="navbarToggler">
+            <ul class="nav navbar-nav">
+
+              <li class="nav-item dropdown">
+                <a href="https://css-tricks.com/almanac/properties/f/filter/" class="nav-link">Куллеры</a>
+
+                <ul class="dropdown-menu hover-products container">
+                  <div class="hover-product">
+                    <div class="hover-product__head">
+                      <img class="hover-product__img" src="img/products/b-silver.png" alt="kuler">
+                      <a class="hover-product__category" href="#">Напольные</a>
+                    </div>
+                    <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                    <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                    <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                    <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                    <li class="hover-product__link"><a href="#">серебристые</a></li>
+                  </div>
+                  <div class="hover-product">
+                    <div class="hover-product__head">
+                      <img class="hover-product__img" src="img/products/Nastolnyj-kuler.png" alt="kuler">
+                      <a class="hover-product__category" href="#">Напольные</a>
+                    </div>
+                    <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                    <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                    <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                    <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                    <li class="hover-product__link"><a href="#">серебристые</a></li>
+                  </div>
+                  <div class="hover-product">
+                    <div class="hover-product__head">
+                      <img class="hover-product__img" src="img/products/bochka.png" alt="kuler">
+                      <a class="hover-product__category" href="#">Напольные</a>
+                    </div>
+                    <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                    <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                    <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                    <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                    <li class="hover-product__link"><a href="#">серебристые</a></li>
+                  </div>
+                  <div class="hover-product">
+                    <div class="hover-product__head">
+                      <img class="hover-product__img" src="img/products/Nastolnyj-kuler.png" alt="kuler">
+                      <a class="hover-product__category" href="#">Напольные</a>
+                    </div>
+                    <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                    <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                    <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+
+                  </div>
+
+                </ul>
+
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#">Пурифайеры</a>
+                <ul class="dropdown-menu hover-products container">
+                  <div class="hover-product">
+                    <div class="hover-product__head">
+                      <img class="hover-product__img" src="img/products/b-silver.png" alt="kuler">
+                      <a class="hover-product__category" href="#">Напольные</a>
+                    </div>
+                    <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                    <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                    <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                    <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                    <li class="hover-product__link"><a href="#">серебристые</a></li>
+                  </div>
+                  <div class="hover-product">
+                    <div class="hover-product__head">
+                      <img class="hover-product__img" src="img/products/Nastolnyj-kuler.png" alt="kuler">
+                      <a class="hover-product__category" href="#">Напольные</a>
+                    </div>
+                    <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                    <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                    <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                    <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                    <li class="hover-product__link"><a href="#">серебристые</a></li>
+                  </div>
+                  <div class="hover-product">
+                    <div class="hover-product__head">
+                      <img class="hover-product__img" src="img/products/bochka.png" alt="kuler">
+                      <a class="hover-product__category" href="#">Напольные</a>
+                    </div>
+                    <li class="hover-product__link"><a href="#">С электронным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">С компрессорным охлаждением</a></li>
+                    <li class="hover-product__link"><a href="#">Со шкафчиком</a></li>
+                    <li class="hover-product__link"><a href="#">С холодильником</a></li>
+                    <li class="hover-product__link"><a href="#">С нижней загрузкой</a></li>
+                    <li class="hover-product__link"><a href="#">Без нагрева</a></li>
+                    <li class="hover-product__link"><a href="#">серебристые</a></li>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Сервис Центр</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Оплата и Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control header-search mr-sm-2" type="search">
+              <button class="icon icon-search my-2 my-sm-0" type="submit"></button>
+            </form>
+          </div>
+
+        </div>
+      </nav>
+
+    </header>
+    <div class="container catalog-wrapper">
+      <div class="row">
+        <!--Фильтры-->
+        <div class="col-sm-12 col-lg-3 catalog-filters">
+          <h3>Фильтр</h3>
+          <form action="#">
+            <div class="filter-option" data-toggle="collapse" data-target="#collapseFunctions" aria-expanded="false"
+              aria-controls="collapseFunctions">
+              Функции
+              <span class="collapse-arrow"></span>
+            </div>
+            <div class="collapse multi-collapse" id="collapseFunctions">
+              <div class="filter-checklist">
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-1">
+                  <label class="custom-control-label" for="filter-check-1">с нагревом и охлаждением</label>
+                  <span class="quantity-1">117</span>
+                </div>
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-2">
+                  <label class="custom-control-label" for="filter-check-2">только нагрев (без охлаждения)</label>
+                  <span class="quantity-2">7</span>
+                </div>
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-3">
+                  <label class="custom-control-label" for="filter-check-3">без нагрева и охлаждения</label>
+                  <span class="quantity-3">5</span>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="filter-option" data-toggle="collapse" data-target="#collapseTypes" aria-expanded="false"
+              aria-controls="collapseTypes">
+              Тип охлаждения
+              <span class="collapse-arrow"></span>
+            </div>
+            <div class="collapse multi-collapse" id="collapseTypes">
+              <div class="filter-checklist">
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-4">
+                  <label class="custom-control-label" for="filter-check-4">с нагревом и охлаждением</label>
+                  <span class="quantity-4">117</span>
+                </div>
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-5">
+                  <label class="custom-control-label" for="filter-check-5">только нагрев (без охлаждения)</label>
+                  <span class="quantity-5">7</span>
+                </div>
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-6">
+                  <label class="custom-control-label" for="filter-check-6">без нагрева и охлаждения</label>
+                  <span class="quantity-6">5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-option" data-toggle="collapse" data-target="#collapseConstruct" aria-expanded="false"
+              aria-controls="collapseConstruct">
+              Тип исполения
+              <span class="collapse-arrow"></span>
+            </div>
+            <div class="collapse multi-collapse" id="collapseConstruct">
+              <div class="filter-checklist">
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-7">
+                  <label class="custom-control-label" for="filter-check-7">с нагревом и охлаждением</label>
+                  <span class="quantity-7">117</span>
+                </div>
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-8">
+                  <label class="custom-control-label" for="filter-check-8">только нагрев (без охлаждения)</label>
+                  <span class="quantity-8">7</span>
+                </div>
+                <div class="filter-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="filter-check-9">
+                  <label class="custom-control-label" for="filter-check-9">без нагрева и охлаждения</label>
+                  <span class="quantity-9">5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-option" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="false"
+              aria-controls="collapsePrice">
+              Лучшая цена
+              <span class="collapse-arrow"></span>
+            </div>
+            <div class="collapse multi-collapse" id="collapsePrice">
+              <div class="filter-checklist">
+                <div class="slider-box">
+                  <label for="min-price">От:</label>
+                  <input type="text" id='min-price'>
+                  <label for="max-price">До:</label>
+                  <input type="text" id='max-price'>
+                  <div id="price-range" class="slider filter-price-range"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="filter-option show-all-options" data-toggle="collapse" data-target=".multi-collapse"
+              aria-expanded="false" aria-controls="collapseConstruct collapseTypes collapseFunctions collapsePrice">
+              Все параметры
+            </div>
+            <div class="filter-buttons">
+              <button type="submit" class="red-buy-btn show-filtered">Показать</button>
+              <button type="reset" class="one-click-btn clear-filtered">Сбросить</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-9 catalog-products">
+          <h3 class="catalog-products__heading">Настольные кулеры</h3>
+
+          <!-- Сортировка и количество продуктов на странице -->
+          <div class="sort-catalog">
+            <form class="sort-catalog-form">
+              <div class="sort-left">
+                <div class="form-group">
+                  <label for="catalogSort">Сортировать:</label>
+                  <select class="form-control" id="catalogSort">
+                    <option>по популярности</option>
+                    <option>по цене</option>
+                    <option>по алфавиту</option>
+                  </select>
+                </div>
+              </div>
+              <div class="sort-right">
+                <div class="sort-right__label">На странице по:</div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="show-number" id="showNumber12" value="show12">
+                  <label class="form-check-label" for="showNumber12">
+                    12
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="show-number" id="showNumber24" value="show24">
+                  <label class="form-check-label" for="showNumber24">
+                    24
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="show-number" id="showNumber36" value="show36">
+                  <label class="form-check-label" for="showNumber36">
+                    36
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+
+            <!-- Блок товаров  -->
+          <div class="catalog-products-list">
+          <div class="catalog-product">
+            <div class="catalog-product-labels">
+              <div class="product-labels__new">Новинка</div>
+              <div class="product-labels__bonus">Установка 0руб</div>
+              <div class="product-labels__sale">-200 руб</div>
+              <div class="product-labels__present"></div>
+            </div>
+          
+              <img class="catalog-product__img" src="./img/products/Kuler_dlja_vodi.png" alt="кулер для воды">
+              <h4 class="catalog-product__name">Ecotronic C21-TE grey кулер настольный</h4>
+        
+            <div class="catalog-product-prices">
+              <div class="profit-price__gain">выгода 1200</div>
+              <div class="product-cart-price">
+                  <div class="product-cart-price--new">5640 руб</div>
+                  <div class="product-cart-price--old">7300 руб</div>
+              </div>
+            </div>
+
+            <div class="catalog-product-footer">
+                <div class="one-click">Купить в один клик</div>
+                <div class="icon-compare"></div>
+                <div class="button profit-price__btn"></div>
+            </div>
+          </div>
+          <div class="catalog-product">
+            <div class="catalog-product-labels">
+              <div class="product-labels__new">Новинка</div>
+              <div class="product-labels__bonus">Установка 0руб</div>
+              <div class="product-labels__sale">-200 руб</div>
+              <div class="product-labels__present"></div>
+            </div>
+          
+              <img class="catalog-product__img" src="./img/products/Kuler_dlja_vodi.png" alt="кулер для воды">
+              <h4 class="catalog-product__name">Ecotronic C21-TE grey кулер настольный</h4>
+        
+            <div class="catalog-product-prices">
+              <div class="profit-price__gain">выгода 1200</div>
+              <div class="product-cart-price">
+                  <div class="product-cart-price--new">5640 руб</div>
+                  <div class="product-cart-price--old">7300 руб</div>
+              </div>
+            </div>
+
+            <div class="catalog-product-footer">
+                <div class="one-click">Купить в один клик</div>
+                <div class="icon-compare"></div>
+                <div class="button profit-price__btn"></div>
+            </div>
+          </div>
+          <div class="catalog-product">
+            <div class="catalog-product-labels">
+              <div class="product-labels__new">Новинка</div>
+              <div class="product-labels__bonus">Установка 0руб</div>
+              <div class="product-labels__sale">-200 руб</div>
+              <div class="product-labels__present"></div>
+            </div>
+          
+              <img class="catalog-product__img" src="./img/products/Kuler_dlja_vodi.png" alt="кулер для воды">
+              <h4 class="catalog-product__name">Ecotronic C21-TE grey кулер настольный</h4>
+        
+            <div class="catalog-product-prices">
+              <div class="profit-price__gain">выгода 1200</div>
+              <div class="product-cart-price">
+                  <div class="product-cart-price--new">5640 руб</div>
+                  <div class="product-cart-price--old">7300 руб</div>
+              </div>
+            </div>
+
+            <div class="catalog-product-footer">
+                <div class="one-click">Купить в один клик</div>
+                <div class="icon-compare"></div>
+                <div class="button profit-price__btn"></div>
+            </div>
+          </div>
+          <div class="catalog-product">
+            <div class="catalog-product-labels">
+              <div class="product-labels__new">Новинка</div>
+              <div class="product-labels__bonus">Установка 0руб</div>
+              <div class="product-labels__sale">-200 руб</div>
+              <div class="product-labels__present"></div>
+            </div>
+          
+              <img class="catalog-product__img" src="./img/products/Kuler_dlja_vodi.png" alt="кулер для воды">
+              <h4 class="catalog-product__name">Ecotronic C21-TE grey кулер настольный</h4>
+        
+            <div class="catalog-product-prices">
+              <div class="profit-price__gain">выгода 1200</div>
+              <div class="product-cart-price">
+                  <div class="product-cart-price--new">5640 руб</div>
+                  <div class="product-cart-price--old">7300 руб</div>
+              </div>
+            </div>
+
+            <div class="catalog-product-footer">
+                <div class="one-click">Купить в один клик</div>
+                <div class="icon-compare"></div>
+                <div class="button profit-price__btn"></div>
+            </div>
+          </div>
+          <div class="catalog-product">
+            <div class="catalog-product-labels">
+              <div class="product-labels__new">Новинка</div>
+              <div class="product-labels__bonus">Установка 0руб</div>
+              <div class="product-labels__sale">-200 руб</div>
+              <div class="product-labels__present"></div>
+            </div>
+          
+              <img class="catalog-product__img" src="./img/products/Kuler_dlja_vodi.png" alt="кулер для воды">
+              <h4 class="catalog-product__name">Ecotronic C21-TE grey кулер настольный</h4>
+        
+            <div class="catalog-product-prices">
+              <div class="profit-price__gain">выгода 1200</div>
+              <div class="product-cart-price">
+                  <div class="product-cart-price--new">5640 руб</div>
+                  <div class="product-cart-price--old">7300 руб</div>
+              </div>
+            </div>
+
+            <div class="catalog-product-footer">
+                <div class="one-click">Купить в один клик</div>
+                <div class="icon-compare"></div>
+                <div class="button profit-price__btn"></div>
+            </div>
+          </div>
+          <div class="catalog-product">
+            <div class="catalog-product-labels">
+              <div class="product-labels__new">Новинка</div>
+              <div class="product-labels__bonus">Установка 0руб</div>
+              <div class="product-labels__sale">-200 руб</div>
+              <div class="product-labels__present"></div>
+            </div>
+          
+              <img class="catalog-product__img" src="./img/products/Kuler_dlja_vodi.png" alt="кулер для воды">
+              <h4 class="catalog-product__name">Ecotronic C21-TE grey кулер настольный</h4>
+        
+            <div class="catalog-product-prices">
+              <div class="profit-price__gain">выгода 1200</div>
+              <div class="product-cart-price">
+                  <div class="product-cart-price--new">5640 руб</div>
+                  <div class="product-cart-price--old">7300 руб</div>
+              </div>
+            </div>
+
+            <div class="catalog-product-footer">
+                <div class="one-click">Купить в один клик</div>
+                <div class="icon-compare"></div>
+                <div class="button profit-price__btn"></div>
+            </div>
+          </div>
+          <div class="catalog-product">
+            <div class="catalog-product-labels">
+              <div class="product-labels__new">Новинка</div>
+              <div class="product-labels__bonus">Установка 0руб</div>
+              <div class="product-labels__sale">-200 руб</div>
+              <div class="product-labels__present"></div>
+            </div>
+          
+              <img class="catalog-product__img" src="./img/products/Kuler_dlja_vodi.png" alt="кулер для воды">
+              <h4 class="catalog-product__name">Ecotronic C21-TE grey кулер настольный</h4>
+        
+            <div class="catalog-product-prices">
+              <div class="profit-price__gain">выгода 1200</div>
+              <div class="product-cart-price">
+                  <div class="product-cart-price--new">5640 руб</div>
+                  <div class="product-cart-price--old">7300 руб</div>
+              </div>
+            </div>
+
+            <div class="catalog-product-footer">
+                <div class="one-click">Купить в один клик</div>
+                <div class="icon-compare"></div>
+                <div class="button profit-price__btn"></div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Футер.....наконец -->
+    <footer class="footer">
+      <div class="container footer-content-wrapper">
+        <div class="footer-box">
+          <a href="#" class="footer-box__link head-link">Компания</a>
+          <a href="#" class="footer-box__link">О компании</a>
+          <a href="#" class="footer-box__link">Новости</a>
+          <a href="#" class="footer-box__link">Сотрудники</a>
+          <a href="#" class="footer-box__link">Вакансии</a>
+          <a href="#" class="footer-box__link">Политика Конфиденциальности</a>
+        </div>
+        <div class="footer-box">
+          <a href="#" class="footer-box__link head-link">Информация</a>
+          <a href="#" class="footer-box__link">О сайте</a>
+          <a href="#" class="footer-box__link">Статьи</a>
+          <a href="#" class="footer-box__link">Вопрос-ответ</a>
+          <a href="#" class="footer-box__link">Производители</a>
+        </div>
+        <div class="footer-box">
+          <a href="#" class="footer-box__link head-link">Помощь</a>
+          <a href="#" class="footer-box__link">Помощь</a>
+          <a href="#" class="footer-box__link">Условия оплаты</a>
+          <a href="#" class="footer-box__link">Условия доставки</a>
+          <a href="#" class="footer-box__link">Гарантия</a>
+        </div>
+        <div class="footer-box">
+          <a href="#" class="footer-box__link head-link">Адресс</a>
+          <a href="#" class="footer-box__link">Нижний новгород, ул. Дворовая 30</a>
+          <div>
+            <a href="#" class="footer-box__link"><span class="icon-phone"></span>+7(831) 429-07-48</a>
+            <a href="#" class="footer-box__link"><span class="icon-email"></span>info@101cooler.ru</a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <a href="#" class="footer-box__link head-link">Способы оплаты</a>
+          <a href="#" class="footer-box__link"><span class="icon-doc"></span>Счет на организацию</a>
+          <a href="#" class="footer-box__link"><span class="icon-cash"></span>Наличными</a>
+          <a href="#" class="footer-box__link"><span class="icon-pay-cards"></span>Банковской картой</a>
+          <div class="pay-services">
+            <a href="#" class="pay-services__link"><span class="icon-mastercard"></span></a>
+            <a href="#" class="pay-services__link"><span class="icon-visa"></span></a>
+            <a href="#" class="pay-services__link"><span class="icon-webmoney"></span></a>
+            <a href="#" class="pay-services__link"><span class="icon-qiwi"></span></a>
+            <a href="#" class="pay-services__link"><span class="icon-walet"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom__rights">
+          2018 &#169; 101cooler.ru Все права защищены ООО «Аквасфера» ОГРН 1085256001050
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+  <script src="js/jquery/dist/jquery.min.js"></script>
+  <script src="js/slider/jquery-ui.min.js"></script>
+  <script src="js/popper/popper.min.js"></script>
+  <script src="js/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    $('.filter-option').click(function () {
+      $(this).find('.collapse-arrow').toggleClass('down');
+    })
+    $('.show-all-options').click(function () {
+      $('.collapse-arrow').toggleClass('down');
+    })
+
+    // Диапазон цены
+    $(function () {
+      $("#price-range").slider({
+        range: true,
+        min: 0,
+        max: 20000,
+        values: [0, 20000],
+        slide: function (event, ui) {
+          $("#min-price").val(ui.values[0] + ' руб.'); // начальное значение мин цены
+          $("#max-price").val(ui.values[1] + ' руб.'); // начальное значение макс цены
+        }
+      });
+      $("#min-price").val($("#price-range").slider("values", 0) + ' руб.');
+      $("#max-price").val($("#price-range").slider("values", 1) + ' руб.');
+
+    });
+  </script>
+
+</body>
+
+</html>
