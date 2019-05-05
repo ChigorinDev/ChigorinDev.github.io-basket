@@ -2,9 +2,11 @@
 
 .categor-wrapper {
   .brick-link {
-    max-width: 17rem;
-    border: 1px solid;
-    min-width: min-content;
+    max-width: 22rem;
+  }
+  .brick-picture {
+    max-height: 75%;
+    width: auto;
   }
 }
 

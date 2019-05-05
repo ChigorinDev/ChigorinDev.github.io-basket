@@ -231,9 +231,11 @@
     min-width: 30rem; } }
 
 .categor-wrapper .brick-link {
-  max-width: 17rem;
-  border: 1px solid;
-  min-width: min-content; }
+  max-width: 22rem; }
+
+.categor-wrapper .brick-picture {
+  max-height: 75%;
+  width: auto; }
 
 .categor-container {
   margin-bottom: 4rem; }
