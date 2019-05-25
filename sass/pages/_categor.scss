@@ -19,6 +19,11 @@
 }
 
 .grid-wrapper {
+
+  .br-gr-add {
+    padding: 0 5%;
+  }
+
   &--kulers {
     .br-gr-1,
     .br-gr-2,
@@ -34,6 +39,14 @@
       grid-column: 3 ;
       grid-row: 1;
     }
+
+    .br-gr-add:nth-child(4n+1) {
+      grid-column: 1 / 3;
+    }
+    .br-gr-add:nth-child(4n+4) {
+      grid-column: 2 / 4;
+    }
+   
   
     .br-gr-4 {
       grid-column: 2 / 4 ;
@@ -67,6 +80,15 @@
     .br-gr-9 {
       padding: 0 5% !important;
     }
+
+    .br-gr-add:nth-child(4n+4) {
+
+      grid-column: 1 / 3;
+    }
+    .br-gr-add:nth-child(4n+7) {
+
+      grid-column: 2 / 4;
+    }   
 
     .br-gr-1 {
       padding: 0 .5% !important;
@@ -116,6 +138,15 @@
     .br-gr-3 {
       padding: 0 5%;
     }
+
+    .br-gr-add:nth-child(4n+1) {
+  
+      grid-column: 1 / 3;
+    }
+    .br-gr-add:nth-child(4n+4) {
+   
+      grid-column: 2 / 4;
+    }  
     .br-gr-1 {
       grid-column: 1 / 3;
       grid-row: 1;
@@ -141,7 +172,12 @@
      .brick-link {
        max-width: none;
      }
+
   &--kulers {
+
+    .br-gr-add {
+      grid-column: 1/4 !important;
+    }
     .br-gr-1 {
       grid-column: 1;
       flex-direction: column-reverse;
@@ -177,6 +213,10 @@
 
   &--filters { 
     grid-template-columns: 1fr 1fr;
+
+    .br-gr-add {
+      grid-column: 1/3 !important;
+    }
     .br-gr-1 {
       grid-column: 1;
       grid-row: 1;
@@ -253,6 +293,10 @@
 
   &--services {
     grid-template-columns: 1fr 1fr;
+
+    .br-gr-add {
+      grid-column: 1/3 !important;
+    }
     .br-gr-1 {
       grid-column: 1 / 3;
       grid-row: 1;
